@@ -18,6 +18,7 @@ Watch Project Team 4
  
 Pascal_Test
 Sven_test
+Orell_test
 
 
 >>>>>>> branch 'master' of https://github.com/trinat-ampere/team-04-watch.git
