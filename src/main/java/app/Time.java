@@ -2,7 +2,6 @@ package app;
 
 import java.text.SimpleDateFormat;
 import java.time.Clock;
-import java.time.Instant;
 import java.time.ZoneId;
 import java.util.Date;
 
@@ -26,6 +25,7 @@ public class Time extends Thread {
 			System.out.println(dateString);
 		try {
 			Thread.sleep(997);
+			
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
