@@ -30,7 +30,7 @@ Aussehen der Analoguhr soll konfiguriert werden k�nnen.
 ## Build-Anleitung
 Vorausgesetz wird:
 * Korrekte Installation von Maven 4.x sowie richtig gesetztes Java Home Verzeichnis.
-* Korrekte Installation des Git Plug-In von Git in Eclipse.
+* Korrekte Installation des Git sowie JUnit Plug-Ins in Eclipse.
 
 #####**1. Checkout**
 
@@ -44,9 +44,54 @@ Klicken Sie "Finish".
 
 Das Projekt wird nun in Ihren Workspace heruntergeladen.
 
-#####**2. Kompilieren**
+#####**2. Test & Run**
 
-Das Kompilieren mit Maven kann in verschiedenen Modi getätigt werden.
+Den Build mit Maven kann in verschiedenen Modi getätigt werden.
+
+Hier wird das Testing und die Installation in Eclipse und im Terminal erklährt.
+
+######**Testing**
+
+######**Eclipse** 
+
+Klicken Sie mit der rechten Maustaste auf das Projekt > Run as > Maven test.
+
+Maven Kompiliert nun den Source-Code und schliesst sich danach wieder.
+
+Klicken Sie erneut mit der rechten Maustaste auf Projekt > Run as > JUnit test.
+
+Nun öffnet sich in Eclipse einen neuen Tab, neben dem Package Explorer. Die Testresultate sind da ersichtlich.
+
+
+#####**Terminal**
+
+Navigieren Sie in der Kommandozeile in das Projekt. (Die pom.xml Datei sollte hier auffindbar sein.)
+
+    mvn test
+ 
+kompiliert den Test und bestätigt das Funktionieren des Programms.
+ 
+######**Installation**
+
+######**Eclipse**
+
+Gehen Sie wiederum auf das Projekt > Run as > Maven install
+Im Unterordner "Target" finden Sie nun das .jar File. Durch Doppelklick öffnet es sich.
+
+######**Terminal**
+
+    mvn intall
+
+installiert das komplette Programm in den Ordner: .../team-04-watch/target
+
+    java -jar target/team-04-watch-0.0.1-SNAPSHOT.jar
+    
+startet das Programm.
+ 
+ 
+
+
+
 
  
 
