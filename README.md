@@ -9,21 +9,21 @@ Es soll eine Uhr erstellt werden, welche auf dem Desktop eines MAC/Windows/Linux
 laufen kann. Die Uhr soll konfigurierbar sein.
 
 In einer **ersten Ausbaustufe** soll eine Digitaluhr erstellt werden. Die Uhr kann gestartet und gestoppt
-werden. Die Position der Uhr auf dem Desktop soll gespeichert werden. D.h. beim n�chsten Starten
+werden. Die Position der Uhr auf dem Desktop soll gespeichert werden. D.h. beim naechsten Starten
 des Programms soll die Uhr am gleichen Ort stehen.
 
 ![webapps](Bilder/UHR.PNG)
 
 In einer **zweiten Ausbaustufe** soll die Digitaluhr mittels Konfigurationsdialog konfiguriert werden
-k�nnen. Die Konfiguration betrifft die Dialog-Hintergrundfarbe und die Schriftfarbe. Weiter w�re es
-optional w�nschenswert die Schriftgr�sse einzustellen. Die Konfiguration wird automatisch in einer
+koennen. Die Konfiguration betrifft die Dialog-Hintergrundfarbe und die Schriftfarbe. Weiter wuere es
+optional wuenschenswert die Schriftgroesse einzustellen. Die Konfiguration wird automatisch in einer
 Datei gespeichert. Beim Starten der Uhr wird die Datei eingelesen.
 
 In einer **dritten Ausbaustufe** sollen mehrere Digitaluhren angezeigt werden. Die Konfiguration soll
-gem�ss Ausbauschritt zwei m�glich sein. Zudem soll die Zeitzone konfiguriert und angezeigt werden.
+gemaess Ausbauschritt zwei moeglich sein. Zudem soll die Zeitzone konfiguriert und angezeigt werden.
 
 In einer **vierten Ausbaustufe** soll wahlweise eine Digital-oder eine Analoguhr angezeigt werden. Das
-Aussehen der Analoguhr soll konfiguriert werden k�nnen.
+Aussehen der Analoguhr soll konfiguriert werden koennen.
 
 ## Rahmenbedingungen
 
@@ -88,7 +88,7 @@ Mit dem Start und Stop Button koennen Sie die Uhr anhalten (Stop) und mit aktuel
 	* Aufwandschaetzung: 1 Storypoint  
 3.  Als Uhren Anwender moechte ich die Uhr starten, damit mir sofort die aktuelle Zeit angezeigt wird.  
 	* Akzeptanzkriterium: Im Programmframe ist ein Startbutton vorhanden welcher die Uhr startet und jede Sekunde aktualisiert.  
-	* Aufwandschätzung: 1 Storypoint	
+	* Aufwandschaetzung: 1 Storypoint	
 	
 Nachfolgend ein Bild der 1. Ausbaustufe
 
