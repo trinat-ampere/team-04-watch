@@ -1,5 +1,5 @@
 package View;
-
+//GUI Klasse
 import java.awt.BorderLayout;
 
 import javax.swing.JFrame;

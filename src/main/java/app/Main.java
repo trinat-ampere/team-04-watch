@@ -1,7 +1,7 @@
 package app;
 
 import java.awt.EventQueue;
-
+//Main Klasse
 public class Main {
 
 	public static void main(String[] args) {

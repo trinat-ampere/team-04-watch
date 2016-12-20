@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import View.View;
-
+//Properties Klasse
 public class props {
 	 /** This will end up in the current directory
     A more sensible location is a sub-directory of user.home.
