@@ -37,6 +37,8 @@ public class Config_View {
 	private JTextField textField_y_Cord;
 	private JLabel lblSchriftgrsse;
 	private JTextField textField_size;
+	private Color background;
+	private Color text;
 
 	/**
 	 * Launch the application.
@@ -161,7 +163,7 @@ public class Config_View {
 		btnTextColor = new JButton("Text Color");
 		btnTextColor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Color text = JColorChooser.showDialog(new JColorChooser(), "ColorChooser",Color.WHITE);
+				text = JColorChooser.showDialog(new JColorChooser(), "ColorChooser",Color.WHITE);
 			}
 		});
 		
@@ -171,7 +173,7 @@ public class Config_View {
 		btnBackgroundColor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				Color background = JColorChooser.showDialog(new JColorChooser(), "ColorChooser",Color.WHITE);
+				background = JColorChooser.showDialog(new JColorChooser(), "ColorChooser",Color.WHITE);
 			}
 		});
 		
