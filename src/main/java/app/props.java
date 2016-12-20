@@ -51,7 +51,7 @@ public class props {
         int y = Integer.parseInt(p.getProperty("y"));
         int w = Integer.parseInt(p.getProperty("w"));
         int h = Integer.parseInt(p.getProperty("h"));
-        
+        //get parameters
         int fontSize = Integer.parseInt(p.getProperty("fS"));
         int backgroundColor = Integer.parseInt(p.getProperty("bC"));
         int fontColor = Integer.parseInt(p.getProperty("fC"));
