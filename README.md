@@ -12,6 +12,8 @@ In einer **ersten Ausbaustufe** soll eine Digitaluhr erstellt werden. Die Uhr ka
 werden. Die Position der Uhr auf dem Desktop soll gespeichert werden. D.h. beim n�chsten Starten
 des Programms soll die Uhr am gleichen Ort stehen.
 
+![webapps](Bilder/UHR.PNG)
+
 In einer **zweiten Ausbaustufe** soll die Digitaluhr mittels Konfigurationsdialog konfiguriert werden
 k�nnen. Die Konfiguration betrifft die Dialog-Hintergrundfarbe und die Schriftfarbe. Weiter w�re es
 optional w�nschenswert die Schriftgr�sse einzustellen. Die Konfiguration wird automatisch in einer
@@ -72,7 +74,7 @@ Mit dem Start und Stop Button koennen Sie die Uhr anhalten (Stop) und mit aktuel
 * Als Computer Anwender moechte ich die aktuelle Konfiguration speichern, damit die Anwendunf beim naechsten Start im gleichen Zustand ist.
 * Als Uhrenkenne moechte ich mehrere Uhren auf dem Bildschirm haben, damit ich verschiedene Konfigurationen gleichzeitig geoeffnet haben kann
 * Als Weltenbummler moechte ich verschiedene Uhren mit verschiednenen Zeitzone sehen, damit ich verschiedene Zeitzonen im Blick habe.
-* Als Designer moechte ich zwischen der Digtalen und der Analogen Uhrenanziege wechseln koennen, damit ich die Oberfläche personalisieren kann.
+* Als Designer moechte ich zwischen der Digtalen und der Analogen Uhrenanziege wechseln koennen, damit ich die Oberflaeche personalisieren kann.
 
 
 
@@ -91,7 +93,15 @@ Mit dem Start und Stop Button koennen Sie die Uhr anhalten (Stop) und mit aktuel
 	* Aufwandschaetzung: 1 Storypoint  
 3.  Als Uhren Anwender moechte ich die Uhr starten, damit mir sofort die aktuelle Zeit angezeigt wird.  
 	* Akzeptanzkriterium: Im Programmframe ist ein Startbutton vorhanden welcher die Uhr startet und jede Sekunde aktualisiert.  
-	* Aufwandschätzung: 1 Storypoint	  
+	* Aufwandschätzung: 1 Storypoint	
+	
+Nachfolgend ein Bild der 1. Ausbaustufe
+
+![webapps](Bilder/Ausbaustufe1_UHR.PNG)
+
+##### UML - Klassendiagramm
+
+![webapps](Bilder/Ausbaustufe1_Klassendiagramm.PNG)
 	
 
 
