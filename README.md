@@ -39,10 +39,10 @@ Watch Project Team 4
 ## Bedienungsanleitung
 
 Die Uhr wird mit dem Ausfuehren des Programmes gestartet. 
-Sie koennen sowohl die Position der Uhr und auch Ihre groesse veraendern, wird die Uhr geschlossen und wieder gestartet
-erscheint diese am selben ort und in der selben Groesse.
+Sie koennen sowohl die Position der Uhr als auch Ihre groesse veraendern, wird die Uhr geschlossen und wieder gestartet
+erscheint diese am selben Ort und in der selben Groesse.
 
-Mit dem Start und Stop Button koenne Sie die Uhr anhalten (Stop) und mit aktueller zeit weiterlaufen lassen (Start).
+Mit dem Start und Stop Button koennen Sie die Uhr anhalten (Stop) und mit aktueller zeit weiterlaufen lassen (Start).
 
 
 
