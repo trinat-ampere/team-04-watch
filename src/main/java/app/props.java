@@ -79,7 +79,8 @@ public class props {
             }
         } else {
         	Rectangle standart = new Rectangle(100,100,400,300);
-			View window = new View(standart, new Font("Serif", Font.ITALIC, 10), Color.WHITE, Color.BLACK); 
+			View window = new View(standart, 
+					new Font("Serif", Font.ITALIC, 10), Color.BLUE, Color.YELLOW); 
         	
         
         }

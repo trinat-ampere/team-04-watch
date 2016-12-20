@@ -71,6 +71,7 @@ public class View extends JFrame {
 		startButton.setVerticalAlignment(SwingConstants.BOTTOM);
 		startButton.setHorizontalAlignment(SwingConstants.LEFT);
 		startButton.setText("start");
+		startButton.setForeground(ftColor);
 		startButton.setEnabled(false);
 		startButton.addActionListener(e -> {
 			startButton.setEnabled(false);
@@ -85,6 +86,7 @@ public class View extends JFrame {
 
 		});
 		time.setFont(new Font("Tahoma", Font.BOLD, 36));
+		time.setForeground(ftColor);
 		GridBagConstraints gbc_time = new GridBagConstraints();
 		gbc_time.gridwidth = 4;
 		gbc_time.gridheight = 3;
@@ -104,6 +106,7 @@ public class View extends JFrame {
 		JButton stopButton = new JButton();
 		stopButton.setVerticalAlignment(SwingConstants.BOTTOM);
 		stopButton.setText("stop");
+		stopButton.setForeground(ftColor);
 		stopButton.setHorizontalAlignment(SwingConstants.RIGHT);
 		stopButton.addActionListener(e -> {
 			clockStop = true;
