@@ -22,6 +22,10 @@ public class Timer extends Thread {
 			ZonedDateTime zonedDateTime = ZonedDateTime.of(now, currentZone); 
 
 			View.aktualisieren(formatter.format(zonedDateTime));
+			if(View.clockStop==true) {
+				View.clockStop =false; 
+				break; 
+			}
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
