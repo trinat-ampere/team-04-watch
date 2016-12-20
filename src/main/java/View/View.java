@@ -68,6 +68,7 @@ public class View extends JFrame {
 		startButton.setVerticalAlignment(SwingConstants.BOTTOM);
 		startButton.setHorizontalAlignment(SwingConstants.LEFT);
 		startButton.setText("start");
+		startButton.setEnabled(false);
 		startButton.addActionListener(e -> {
 			startButton.setEnabled(false);
 			try {
