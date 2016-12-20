@@ -38,7 +38,7 @@ public class GUI {
 
 	
 	
-	//create new clock frame
+	//create new clock framed
 	private void createFrame() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
