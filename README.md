@@ -52,11 +52,6 @@ Mit dem Start und Stop Button koennen Sie die Uhr anhalten (Stop) und mit aktuel
 
 
 
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/trinat-ampere/team-04-watch.git
-=======
-
-
 ## Dokumentation Sprint Ausbaustufe 1
 ##### User Story Sprint backlog
 1. Als Computer Anwender moechte ich die Zeit sehen, um zu wissen wie spaet es ist.  
@@ -77,11 +72,6 @@ Nachfolgend ein Bild der 1. Ausbaustufe
 
 ![webapps](Bilder/Ausbaustufe1_Klassendiagramm.PNG)
 	
-
-
-
-### UML erstell-Plug-in: ObjectAid
-### http://www.objectaid.com/update
 
 
 

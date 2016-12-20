@@ -3,7 +3,7 @@
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="app.props" project="team-04-watch" 
     file="/team-04-watch/src/main/java/app/props.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="181" y="248"/>    
+    <position height="-1" width="-1" x="253" y="313"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="app.Main" project="team-04-watch" 
     file="/team-04-watch/src/main/java/app/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="264" y="80"/>    
+    <position height="-1" width="-1" x="389" y="112"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="View.View" project="team-04-watch" 
     file="/team-04-watch/src/main/java/View/View.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="283" y="452"/>    
+    <position height="-1" width="-1" x="590" y="402"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="app.Timer" project="team-04-watch" 
     file="/team-04-watch/src/main/java/app/Timer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="406" y="239"/>    
+    <position height="-1" width="-1" x="691" y="189"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -38,8 +38,8 @@
     </display>  
   </class>  
   <dependency id="5">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
   </dependency>  
   <dependency id="6">    
     <end type="SOURCE" refId="2"/>    
@@ -50,8 +50,8 @@
     <end type="TARGET" refId="3"/>  
   </dependency>  
   <dependency id="8">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
   </dependency>  
   <dependency id="9">    
     <end type="SOURCE" refId="2"/>    
