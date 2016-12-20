@@ -1,6 +1,39 @@
 # team-04-watch
 Watch Project Team 4
 
+## Einleitung
+In diesem Git-Repository soll im Rahmen des Software Engineering und Programmieren ein Projekt entstehen.
+
+## Ziele
+Es soll eine Uhr erstellt werden, welche auf dem Desktop eines MAC/Windows/Linux- Computer
+laufen kann. Die Uhr soll konfigurierbar sein.
+
+In einer **ersten Ausbaustufe** soll eine Digitaluhr erstellt werden. Die Uhr kann gestartet und gestoppt
+werden. Die Position der Uhr auf dem Desktop soll gespeichert werden. D.h. beim n‰chsten Starten
+des Programms soll die Uhr am gleichen Ort stehen.
+
+In einer **zweiten Ausbaustufe** soll die Digitaluhr mittels Konfigurationsdialog konfiguriert werden
+kˆnnen. Die Konfiguration betrifft die Dialog-Hintergrundfarbe und die Schriftfarbe. Weiter w‰re es
+optional w¸nschenswert die Schriftgrˆsse einzustellen. Die Konfiguration wird automatisch in einer
+Datei gespeichert. Beim Starten der Uhr wird die Datei eingelesen.
+
+In einer **dritten Ausbaustufe** sollen mehrere Digitaluhren angezeigt werden. Die Konfiguration soll
+gem‰ss Ausbauschritt zwei mˆglich sein. Zudem soll die Zeitzone konfiguriert und angezeigt werden.
+
+In einer **vierten Ausbaustufe** soll wahlweise eine Digital-oder eine Analoguhr angezeigt werden. Das
+Aussehen der Analoguhr soll konfiguriert werden kˆnnen.
+
+## Rahmenbedingungen
+
+## Build-Anleitung
+
+## Bedienungsanleitung
+
+Die Uhr wird mit dem Ausfuehren des Programmes gestartet. 
+Sie koennen sowohl die Position der Uhr als auch Ihre groesse veraendern, wird die Uhr geschlossen und wieder gestartet
+erscheint diese am selben Ort und in der selben Groesse.
+
+Mit dem Start und Stop Button koennen Sie die Uhr anhalten (Stop) und mit aktueller zeit weiterlaufen lassen (Start).
 
 ## User Stories Backlog
 
@@ -10,10 +43,10 @@ Watch Project Team 4
 * Als Uhren Anwender moechte ich die Uhr starten, damit mir sofort 		die aktuelle Zeit angezeigt wird.
 * Als Kunstliebhaber moechte ich die Zeit als Digitaluhr ablesen koennen, damit ich eine andere Darstellungsform machen kann
 * Als Designer moechte ich die Hintergrundfarbe und die Schriftfarbe veraendern koennen.
-* Als Computer Anwender m√∂chte ich die aktuelle Konfiguration speichern, damit die Anwendunf beim n√§chsten Start im gleichen Zustand ist.
-* Als Uhrenkenne m√∂chte ich mehrere Uhren auf dem Bildschirm haben, damit ich verschiedene Konfigurationen gleichzeitig geoeffnet haben kann
-* Als Weltenbummler m√∂chte ich verschiedene Uhren mit verschiednenen Zeitzone sehen, damit ich verschiedene Zeitzonen im Blick habe.
-* Als Designer m√∂chte ich zwischen der Digtalen und der Analogen Uhrenanziege wechseln k√∂nnen, damit ich die Oberfl√§che personalisieren kann.
+* Als Computer Anwender moechte ich die aktuelle Konfiguration speichern, damit die Anwendunf beim naechsten Start im gleichen Zustand ist.
+* Als Uhrenkenne moechte ich mehrere Uhren auf dem Bildschirm haben, damit ich verschiedene Konfigurationen gleichzeitig geoeffnet haben kann
+* Als Weltenbummler moechte ich verschiedene Uhren mit verschiednenen Zeitzone sehen, damit ich verschiedene Zeitzonen im Blick habe.
+* Als Designer moechte ich zwischen der Digtalen und der Analogen Uhrenanziege wechseln koennen, damit ich die Oberfl√§che personalisieren kann.
 
 
 
@@ -22,27 +55,21 @@ Watch Project Team 4
 =======
 
 
-## Ausbaustufe 1
+## Dokumentation Sprint Ausbaustufe 1
 
 ### User Story Sprint backlog
-1. Als Computer Anwender moechte ich die Zeit sehen, um zu wissen wie spaet es ist.
-	* Akzeptanzkriterium: Zeit wird in einem JFrame angezeigt.
-	* Aufwandsch√§tzung: 3 Storypoints
-2.  Als Uhren Benutzer moechte ich die Uhr anhalten, um mir einen bestimmten Zeitpunkt einzupraegen
-	* Akzeptanzkriterium: Im Programmframe ist ein Stoppbutton 	vorhanden welcher die Uhr zum aktuellen Zeitpunkt einfriert
-	* Aufwandsch√§tzung: 1 Storypoint
-3.  Als Uhren Anwender moechte ich die Uhr starten, damit mir sofort die aktuelle Zeit angezeigt wird.
-	* Akzeptanzkriterium: Im Programmframe ist ein Startbutton vorhanden welcher die Uhr startet und jede Sekunde aktualisiert.
-	* Aufwandsch√§tzung: 1 Storypoint	
+1. Als Computer Anwender moechte ich die Zeit sehen, um zu wissen wie spaet es ist.  
+	* Akzeptanzkriterium: Zeit wird in einem JFrame angezeigt.  
+	* Aufwandschaetzung: 3 Storypoints  
+2.  Als Uhren Benutzer moechte ich die Uhr anhalten, um mir einen bestimmten Zeitpunkt einzupraegen  
+	* Akzeptanzkriterium: Im Programmframe ist ein Stoppbutton 	vorhanden welcher die Uhr zum aktuellen Zeitpunkt einfriert  
+	* Aufwandschaetzung: 1 Storypoint  
+3.  Als Uhren Anwender moechte ich die Uhr starten, damit mir sofort die aktuelle Zeit angezeigt wird.  
+	* Akzeptanzkriterium: Im Programmframe ist ein Startbutton vorhanden welcher die Uhr startet und jede Sekunde aktualisiert.  
+	* Aufwandsch√§tzung: 1 Storypoint	  
 	
 
-## Bedienungsanleitung
 
-Die Uhr wird mit dem Ausfuehren des Programmes gestartet. 
-Sie koennen sowohl die Position der Uhr als auch Ihre groesse veraendern, wird die Uhr geschlossen und wieder gestartet
-erscheint diese am selben Ort und in der selben Groesse.
-
-Mit dem Start und Stop Button koennen Sie die Uhr anhalten (Stop) und mit aktueller zeit weiterlaufen lassen (Start).
 
 ### UML erstell-Plug-in: ObjectAid
 ### http://www.objectaid.com/update
