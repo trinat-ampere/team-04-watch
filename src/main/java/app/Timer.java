@@ -24,6 +24,7 @@ public class Timer extends Thread {
 			View.aktualisieren(formatter.format(zonedDateTime));
 			if(View.clockStop==true) {
 				View.clockStop =false; 
+				System.out.println("Timer stopped");
 				break; 
 			}
 			try {
