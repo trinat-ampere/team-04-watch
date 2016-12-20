@@ -56,8 +56,7 @@ Mit dem Start und Stop Button koennen Sie die Uhr anhalten (Stop) und mit aktuel
 
 
 ## Dokumentation Sprint Ausbaustufe 1
-
-### User Story Sprint backlog
+##### User Story Sprint backlog
 1. Als Computer Anwender moechte ich die Zeit sehen, um zu wissen wie spaet es ist.  
 	* Akzeptanzkriterium: Zeit wird in einem JFrame angezeigt.  
 	* Aufwandschaetzung: 3 Storypoints  
