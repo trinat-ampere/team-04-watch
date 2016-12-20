@@ -19,16 +19,9 @@ import app.Timer;
 
 public class View extends JFrame {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
-	/**
-	 * 
-	 */
-	/**
-	 * 
-	 */
+
 	private JPanel contentpane;
 	public static JLabel time = new JLabel();
 	public static boolean clockStop = false;
