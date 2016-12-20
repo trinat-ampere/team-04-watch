@@ -1,5 +1,6 @@
 package app;
 
+import java.awt.Font;
 import java.awt.Rectangle;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -50,8 +51,13 @@ public class props {
         int y = Integer.parseInt(p.getProperty("y"));
         int w = Integer.parseInt(p.getProperty("w"));
         int h = Integer.parseInt(p.getProperty("h"));
+        
+        int fontSize = Integer.parseInt(p.getProperty("fS"));
+        int backgroundColor = Integer.parseInt(p.getProperty("bC"));
+        int fontColor = Integer.parseInt(p.getProperty("fC"));
 
         Rectangle r = new Rectangle(x,y,w,h);
+        Font font = new Font("Serif", Font.ITALIC, fontSize);
 
       View window = new View(r);
     }
