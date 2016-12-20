@@ -36,11 +36,13 @@ public class props {
 
         BufferedWriter br = new BufferedWriter(new FileWriter(file));
         p.store(br, "Properties of the user frame");
+        
+        
+        
     }
 
     /** Restore location & size of UI */
-    @SuppressWarnings("unused")
-	public static void restoreOptions() throws IOException {
+	public static Rectangle restoreOptions() throws IOException {
         File file = new File(fileName);
         Properties p = new Properties();
         BufferedReader br = new BufferedReader(new FileReader(file));
@@ -53,9 +55,12 @@ public class props {
 
         Rectangle r = new Rectangle(x,y,w,h);
 
-      View window = new View(r);
+        return r; 
+        
     }
 
+    
+    
     @SuppressWarnings("unused")
 	public static void properties() {
        
@@ -63,7 +68,7 @@ public class props {
         File optionsFile = new File(fileName);
         if (optionsFile.exists()) {
             try {
-                restoreOptions();
+                new View(restoreOptions());
             } catch(IOException ioe) {
                 ioe.printStackTrace();
             }
