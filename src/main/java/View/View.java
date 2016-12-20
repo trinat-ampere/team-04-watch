@@ -1,4 +1,5 @@
 package View;
+
 //GUI Klasse
 import java.awt.BorderLayout;
 import java.awt.ComponentOrientation;
@@ -21,7 +22,6 @@ import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
 
-
 public class View extends JFrame {
 
 	/**
@@ -34,13 +34,9 @@ public class View extends JFrame {
 	/**
 	 * 
 	 */
-	private JPanel contentpane ;
+	private JPanel contentpane;
 	public static JLabel time = new JLabel();
 	public static boolean clockStop = false;
-	
-	
-
-	
 
 	/**
 	 * Create the application.
@@ -50,7 +46,7 @@ public class View extends JFrame {
 		System.out.println("GUI running");
 		setBounds(bounds);
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-		addWindowListener(new WindowAdapter(){
+		addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent we) {
 				try {
 					app.props.storeOptions(getBounds());
@@ -60,74 +56,71 @@ public class View extends JFrame {
 				System.exit(0);
 			}
 		});
-	//	setLocationRelativeTo(null);
-		contentpane =  new JPanel();
+		// setLocationRelativeTo(null);
+		contentpane = new JPanel();
 		contentpane.setBounds(10, 11, 375, 239);
 
-		
 		setContentPane(contentpane);
 		GridBagLayout gbl_contentpane = new GridBagLayout();
-		gbl_contentpane.columnWidths = new int[]{151, 66, 0, 69, 1, 0};
-		gbl_contentpane.rowHeights = new int[]{25, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-		gbl_contentpane.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-		gbl_contentpane.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gbl_contentpane.columnWidths = new int[] { 151, 66, 0, 69, 1, 0 };
+		gbl_contentpane.rowHeights = new int[] { 25, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		gbl_contentpane.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
+		gbl_contentpane.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		contentpane.setLayout(gbl_contentpane);
 		contentpane.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
-		//init startButton with actionlistener
-			JButton startButton = new JButton();
-			startButton.setVerticalAlignment(SwingConstants.BOTTOM);
-			startButton.setHorizontalAlignment(SwingConstants.LEFT);
-			startButton.setText("start");
-			startButton.addActionListener(e -> {
-				try{
-					new Timer().start();
-				}
-				catch(Exception f){
-					f.printStackTrace();
-				};
-			});
-			time.setFont(new Font("Tahoma", Font.BOLD, 36));
-			GridBagConstraints gbc_time = new GridBagConstraints();
-			gbc_time.gridwidth = 4;
-			gbc_time.gridheight = 3;
-			gbc_time.insets = new Insets(0, 0, 5, 5);
-			gbc_time.anchor = GridBagConstraints.WEST;
-			gbc_time.gridx = 1;
-			gbc_time.gridy = 4;
-			contentpane.add(time, gbc_time);
-			GridBagConstraints gbc_startButton = new GridBagConstraints();
-			gbc_startButton.anchor = GridBagConstraints.NORTHWEST;
-			gbc_startButton.insets = new Insets(0, 0, 0, 5);
-			gbc_startButton.gridx = 1;
-			gbc_startButton.gridy = 8;
-			contentpane.add(startButton, gbc_startButton);
-			
-			
-			
-			
-			
-	//init stopButton with actionListener
-			JButton stopButton = new JButton();
-			stopButton.setVerticalAlignment(SwingConstants.BOTTOM);
-			stopButton.setText("stop");
-			stopButton.setHorizontalAlignment(SwingConstants.RIGHT);
-			stopButton.addActionListener(e -> {
-				clockStop = true;
-				
-			});
-			GridBagConstraints gbc_stopButton = new GridBagConstraints();
-			gbc_stopButton.anchor = GridBagConstraints.NORTHWEST;
-			gbc_stopButton.insets = new Insets(0, 0, 0, 5);
-			gbc_stopButton.gridx = 3;
-			gbc_stopButton.gridy = 8;
-			contentpane.add(stopButton, gbc_stopButton);
+		// init startButton with actionlistener
+		JButton startButton = new JButton();
+		startButton.setVerticalAlignment(SwingConstants.BOTTOM);
+		startButton.setHorizontalAlignment(SwingConstants.LEFT);
+		startButton.setText("start");
+		startButton.addActionListener(e -> {
+			startButton.setEnabled(false);
+			try {
+				new Timer().start();
+			}
+
+			catch (Exception f) {
+				f.printStackTrace();
+			}
+			;
+
+		});
+		time.setFont(new Font("Tahoma", Font.BOLD, 36));
+		GridBagConstraints gbc_time = new GridBagConstraints();
+		gbc_time.gridwidth = 4;
+		gbc_time.gridheight = 3;
+		gbc_time.insets = new Insets(0, 0, 5, 5);
+		gbc_time.anchor = GridBagConstraints.WEST;
+		gbc_time.gridx = 1;
+		gbc_time.gridy = 4;
+		contentpane.add(time, gbc_time);
+		GridBagConstraints gbc_startButton = new GridBagConstraints();
+		gbc_startButton.anchor = GridBagConstraints.NORTHWEST;
+		gbc_startButton.insets = new Insets(0, 0, 0, 5);
+		gbc_startButton.gridx = 1;
+		gbc_startButton.gridy = 8;
+		contentpane.add(startButton, gbc_startButton);
+
+		// init stopButton with actionListener
+		JButton stopButton = new JButton();
+		stopButton.setVerticalAlignment(SwingConstants.BOTTOM);
+		stopButton.setText("stop");
+		stopButton.setHorizontalAlignment(SwingConstants.RIGHT);
+		stopButton.addActionListener(e -> {
+			clockStop = true;
+			startButton.setEnabled(true);
+		});
+		GridBagConstraints gbc_stopButton = new GridBagConstraints();
+		gbc_stopButton.anchor = GridBagConstraints.NORTHWEST;
+		gbc_stopButton.insets = new Insets(0, 0, 0, 5);
+		gbc_stopButton.gridx = 3;
+		gbc_stopButton.gridy = 8;
+		contentpane.add(stopButton, gbc_stopButton);
 		setVisible(true);
 	}
-	
+
 	public static void aktualisieren(String date) {
 		time.setText(date);
 	}
 
-
-	
 }
