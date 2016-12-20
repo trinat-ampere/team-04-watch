@@ -80,7 +80,7 @@ Im Unterordner "Target" finden Sie nun das .jar File. Durch Doppelklick öffnet 
 
 ######**Terminal**
 
-    mvn intall
+    mvn install
 
 installiert das komplette Programm in den Ordner: .../team-04-watch/target
 
