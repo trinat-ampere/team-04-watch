@@ -20,7 +20,7 @@ public class props {
     public static final String fileName = "options.prop";
 
     /** Store location & size of UI */
-    public static void storeOptions(Rectangle r) throws Exception {
+    public static void storeOptions(Rectangle r, Color bgColor, Color ftColor, int ftSize) throws Exception {
         File file = new File(fileName);
         Properties p = new Properties();
         // restore the frame from 'full screen' first!
@@ -35,6 +35,9 @@ public class props {
         p.setProperty("y", "" + y);
         p.setProperty("w", "" + w);
         p.setProperty("h", "" + h);
+        p.setProperty("backgroundColor", "" + bgColor);
+        p.setProperty("fontColor", "" + ftColor);
+        p.setProperty("fontSize", "" + Integer.toString(ftSize));
 
         BufferedWriter br = new BufferedWriter(new FileWriter(file));
         p.store(br, "Properties of the user frame");
@@ -53,9 +56,9 @@ public class props {
         int w = Integer.parseInt(p.getProperty("w"));
         int h = Integer.parseInt(p.getProperty("h"));
         //get parameters
-        int fontSize = Integer.parseInt(p.getProperty("fS"));
-        String backgroundColor = p.getProperty("bC");
-        String fontColor = p.getProperty("fC");
+        int fontSize = Integer.parseInt(p.getProperty("fontSize"));
+        String backgroundColor = p.getProperty("backgroundColor");
+        String fontColor = p.getProperty("fontColor");
 
         Rectangle r = new Rectangle(x,y,w,h);
         Font font = new Font("Serif", Font.ITALIC, fontSize);
@@ -80,7 +83,7 @@ public class props {
         } else {
         	Rectangle standart = new Rectangle(100,100,400,300);
 			View window = new View(standart, 
-					new Font("Serif", Font.ITALIC, 10), Color.BLUE, Color.YELLOW); 
+					new Font("Serif", Font.ITALIC, 10), Color.BLACK, Color.WHITE); 
         	
         
         }
