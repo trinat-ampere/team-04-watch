@@ -82,7 +82,7 @@ public class View extends JFrame {
 			;
 
 		});
-		time.setFont(new Font("Tahoma", Font.BOLD, 36));
+		time.setFont(font);
 		time.setForeground(ftColor);
 		GridBagConstraints gbc_time = new GridBagConstraints();
 		gbc_time.gridwidth = 4;

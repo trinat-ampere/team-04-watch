@@ -35,8 +35,8 @@ public class props {
         p.setProperty("y", "" + y);
         p.setProperty("w", "" + w);
         p.setProperty("h", "" + h);
-        p.setProperty("backgroundColor", "" + bgColor);
-        p.setProperty("fontColor", "" + ftColor);
+        p.setProperty("backgroundColor", "" + bgColor.getRGB());
+        p.setProperty("fontColor", "" + ftColor.getRGB());
         p.setProperty("fontSize", "" + Integer.toString(ftSize));
 
         BufferedWriter br = new BufferedWriter(new FileWriter(file));
@@ -62,8 +62,8 @@ public class props {
 
         Rectangle r = new Rectangle(x,y,w,h);
         Font font = new Font("Serif", Font.ITALIC, fontSize);
-        Color bgColor = Color.getColor(backgroundColor);
-        Color ftColor = Color.getColor(fontColor);
+        Color bgColor = Color.decode(backgroundColor);
+        Color ftColor = Color.decode(fontColor);
 
       View window = new View(r, font, bgColor, ftColor);
       

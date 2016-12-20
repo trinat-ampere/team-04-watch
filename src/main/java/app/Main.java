@@ -1,17 +1,16 @@
 package app;
 
 import java.awt.EventQueue;
-//Main Klasse
+
+import View.Config_View;
 public class Main {
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					props.properties();
-					new Timer().start();
-					
-
+					Config_View window = new Config_View();
+					window.frmTrinatClockConfiguration.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

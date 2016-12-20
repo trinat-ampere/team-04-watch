@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import java.awt.GridBagConstraints;
 import javax.swing.JTextField;
 
+import app.Timer;
 import app.props;
 
 import java.awt.Insets;
@@ -23,7 +24,7 @@ import java.awt.event.ActionEvent;
 
 public class Config_View {
 
-	private JFrame frmTrinatClockConfiguration;
+	public JFrame frmTrinatClockConfiguration;
 	private JButton btnBackgroundColor;
 	private JButton btnTextColor;
 	private JButton btnSpeichern;
@@ -43,18 +44,7 @@ public class Config_View {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Config_View window = new Config_View();
-					window.frmTrinatClockConfiguration.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+	
 
 	/**
 	 * Create the application.
@@ -154,8 +144,26 @@ public class Config_View {
 				int x_Cord = Integer.parseInt(textField_x_Cord.getText());
 				int y_Cord = Integer.parseInt(textField_y_Cord.getText());
 				int size = Integer.parseInt(textField_size.getText());
-				Rectangle r = new Rectangle(hoehe,breite,x_Cord, y_Cord); 
-				props.storeOptions(r,background,text,size);
+				Rectangle r = new Rectangle(x_Cord, y_Cord, breite, hoehe); 
+				try {
+					props.storeOptions(r,background,text,size);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} 
+				EventQueue.invokeLater(new Runnable() {
+					public void run() {
+						try {
+							props.properties();
+							new Timer().start();
+							
+
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+					}
+				});
+			
 				
 			}
 		});
