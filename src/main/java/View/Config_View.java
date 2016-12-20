@@ -10,6 +10,8 @@ import javax.swing.JLabel;
 import java.awt.GridBagConstraints;
 import javax.swing.JTextField;
 
+import org.apache.commons.lang3.math.NumberUtils;
+
 import app.Timer;
 import app.props;
 
@@ -147,10 +149,10 @@ public class Config_View {
 				
 				int hoehe = NumberUtils.toInt(textField_hoehe.getText(),300);
 						
-				int breite = Integer.parseInt(textField_breite.getText());
-				int x_Cord = Integer.parseInt(textField_x_Cord.getText());
-				int y_Cord = Integer.parseInt(textField_y_Cord.getText());
-				int size = Integer.parseInt(textField_size.getText());
+				int breite = NumberUtils.toInt(textField_breite.getText(),500);
+				int x_Cord = NumberUtils.toInt(textField_x_Cord.getText(),200);
+				int y_Cord = NumberUtils.toInt(textField_y_Cord.getText(),200);
+				int size = NumberUtils.toInt(textField_size.getText(),14);
 				Rectangle r = new Rectangle(x_Cord, y_Cord, breite, hoehe); 
 				
 				
