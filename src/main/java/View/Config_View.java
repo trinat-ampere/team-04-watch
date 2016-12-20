@@ -20,7 +20,7 @@ import javax.swing.JColorChooser;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-//
+
 public class Config_View {
 
 	private JFrame frmTrinatClockConfiguration;
