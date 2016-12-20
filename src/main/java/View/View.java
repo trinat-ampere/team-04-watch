@@ -34,12 +34,14 @@ public class View extends JFrame {
 		setTitle("Trinat Clock");
 		System.out.println("GUI running");
 		setBounds(bounds);
-		getContentPane().setBackground(bgColor);
+		setTitle("TrinatClock");
+		
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent we) {
 				try {
-					app.props.storeOptions(getBounds());
+					app.props.storeOptions(getBounds(), getContentPane().getBackground(), getContentPane().getForeground(), 
+							getContentPane().getFont().getSize());
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -50,6 +52,8 @@ public class View extends JFrame {
 		contentpane = new JPanel();
 		contentpane.setBounds(10, 11, 375, 239);
 		contentpane.setForeground(ftColor);
+		contentpane.setBackground(bgColor);
+		contentpane.setFont(font);
 
 		setContentPane(contentpane);
 		GridBagLayout gbl_contentpane = new GridBagLayout();
