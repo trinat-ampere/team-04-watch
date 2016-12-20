@@ -9,25 +9,51 @@ Es soll eine Uhr erstellt werden, welche auf dem Desktop eines MAC/Windows/Linux
 laufen kann. Die Uhr soll konfigurierbar sein.
 
 In einer **ersten Ausbaustufe** soll eine Digitaluhr erstellt werden. Die Uhr kann gestartet und gestoppt
-werden. Die Position der Uhr auf dem Desktop soll gespeichert werden. D.h. beim n‰chsten Starten
+werden. Die Position der Uhr auf dem Desktop soll gespeichert werden. D.h. beim nÔøΩchsten Starten
 des Programms soll die Uhr am gleichen Ort stehen.
 
 ![webapps](Bilder/UHR.PNG)
 
 In einer **zweiten Ausbaustufe** soll die Digitaluhr mittels Konfigurationsdialog konfiguriert werden
-kˆnnen. Die Konfiguration betrifft die Dialog-Hintergrundfarbe und die Schriftfarbe. Weiter w‰re es
-optional w¸nschenswert die Schriftgrˆsse einzustellen. Die Konfiguration wird automatisch in einer
+kÔøΩnnen. Die Konfiguration betrifft die Dialog-Hintergrundfarbe und die Schriftfarbe. Weiter wÔøΩre es
+optional wÔøΩnschenswert die SchriftgrÔøΩsse einzustellen. Die Konfiguration wird automatisch in einer
 Datei gespeichert. Beim Starten der Uhr wird die Datei eingelesen.
 
 In einer **dritten Ausbaustufe** sollen mehrere Digitaluhren angezeigt werden. Die Konfiguration soll
-gem‰ss Ausbauschritt zwei mˆglich sein. Zudem soll die Zeitzone konfiguriert und angezeigt werden.
+gemÔøΩss Ausbauschritt zwei mÔøΩglich sein. Zudem soll die Zeitzone konfiguriert und angezeigt werden.
 
 In einer **vierten Ausbaustufe** soll wahlweise eine Digital-oder eine Analoguhr angezeigt werden. Das
-Aussehen der Analoguhr soll konfiguriert werden kˆnnen.
+Aussehen der Analoguhr soll konfiguriert werden kÔøΩnnen.
 
 ## Rahmenbedingungen
 
 ## Build-Anleitung
+Vorausgesetz wird:
+* Korrekte Installation von Maven 4.x sowie richtig gesetztes Java Home Verzeichnis.
+* Korrekte Installation des Git Plug-In von Git in Eclipse.
+
+#####**1. Checkout**
+
+Als erstes muss das Maven-Projekt von GitHub heruntergeladen und in Eclipse importiert werden.
+
+File>Import>Maven>Check out Maven projects from SCM
+
+Im Fenster wird als SCM-Quelle nun git gew√§hlt. und den Link zum Projekt eingef√ºgt (entweder direkt copy-paste aus dem Browser, oder durch click auf das Feld "Clone or download".
+
+Klicken Sie "Finish".
+
+Das Projekt wird nun in Ihren Workspace heruntergeladen.
+
+#####**2. Kompilieren**
+
+Das Kompilieren mit Maven kann in verschiedenen Modi get√§tigt werden.
+
+ 
+
+
+ 
+	
+	
 
 ## Bedienungsanleitung
 
