@@ -24,6 +24,7 @@ public class Config_View {
 	private JTextField textField_X_Cord;
 	private JTextField textField_Y_Cord;
 	private JButton btnBackgroundColor;
+	private JButton btnTextColor;
 
 	/**
 	 * Launch the application.
@@ -58,9 +59,9 @@ public class Config_View {
 		frmTrinatClockConfiguration.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[] {0, 0, 0, 6};
-		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 1.0, Double.MIN_VALUE};
-		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		frmTrinatClockConfiguration.getContentPane().setLayout(gridBagLayout);
 		
 		JLabel lblHhe = new JLabel("Höhe");
@@ -135,15 +136,28 @@ public class Config_View {
 		btnBackgroundColor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				Color background = JColorChooser.showDialog(frmTrinatClockConfiguration.getRootPane().add(background), "ColorChooser",Color.WHITE);
-				
+				Color background = JColorChooser.showDialog(new JColorChooser(), "ColorChooser",Color.WHITE);
 			}
 		});
 		GridBagConstraints gbc_btnBackgroundColor = new GridBagConstraints();
-		gbc_btnBackgroundColor.insets = new Insets(0, 0, 0, 5);
+		gbc_btnBackgroundColor.anchor = GridBagConstraints.WEST;
+		gbc_btnBackgroundColor.insets = new Insets(0, 0, 5, 5);
 		gbc_btnBackgroundColor.gridx = 1;
 		gbc_btnBackgroundColor.gridy = 9;
 		frmTrinatClockConfiguration.getContentPane().add(btnBackgroundColor, gbc_btnBackgroundColor);
+		
+		btnTextColor = new JButton("Text Color");
+		btnTextColor.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Color text = JColorChooser.showDialog(new JColorChooser(), "ColorChooser",Color.WHITE);
+			}
+		});
+		GridBagConstraints gbc_btnTextColor = new GridBagConstraints();
+		gbc_btnTextColor.anchor = GridBagConstraints.WEST;
+		gbc_btnTextColor.insets = new Insets(0, 0, 0, 5);
+		gbc_btnTextColor.gridx = 1;
+		gbc_btnTextColor.gridy = 10;
+		frmTrinatClockConfiguration.getContentPane().add(btnTextColor, gbc_btnTextColor);
 	}
 
 }
