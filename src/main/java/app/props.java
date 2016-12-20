@@ -1,5 +1,6 @@
 package app;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.Rectangle;
 import java.io.BufferedReader;
@@ -53,13 +54,16 @@ public class props {
         int h = Integer.parseInt(p.getProperty("h"));
         //get parameters
         int fontSize = Integer.parseInt(p.getProperty("fS"));
-        int backgroundColor = Integer.parseInt(p.getProperty("bC"));
-        int fontColor = Integer.parseInt(p.getProperty("fC"));
+        String backgroundColor = p.getProperty("bC");
+        String fontColor = p.getProperty("fC");
 
         Rectangle r = new Rectangle(x,y,w,h);
         Font font = new Font("Serif", Font.ITALIC, fontSize);
+        Color bgColor = Color.getColor(backgroundColor);
+        Color ftColor = Color.getColor(fontColor);
 
-      View window = new View(r);
+      View window = new View(r, font, bgColor, ftColor);
+      
     }
 
     @SuppressWarnings("unused")
@@ -75,7 +79,8 @@ public class props {
             }
         } else {
         	Rectangle standart = new Rectangle(100,100,400,300);
-			View window = new View(standart); 
+			View window = new View(standart, 
+					new Font("Serif", Font.ITALIC, 10), Color.BLUE, Color.YELLOW); 
         	
         
         }

@@ -1,4 +1,5 @@
 package View;
+import java.awt.Color;
 //ghgj
 import java.awt.ComponentOrientation;
 import java.awt.Font;
@@ -29,10 +30,11 @@ public class View extends JFrame {
 	/**
 	 * Create the application.
 	 */
-	public View(Rectangle bounds) {
+	public View(Rectangle bounds, Font font, Color bgColor, Color ftColor) {
 		setTitle("Trinat Clock");
 		System.out.println("GUI running");
 		setBounds(bounds);
+		getContentPane().setBackground(bgColor);
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent we) {
@@ -47,6 +49,7 @@ public class View extends JFrame {
 		// setLocationRelativeTo(null);
 		contentpane = new JPanel();
 		contentpane.setBounds(10, 11, 375, 239);
+		contentpane.setForeground(ftColor);
 
 		setContentPane(contentpane);
 		GridBagLayout gbl_contentpane = new GridBagLayout();
@@ -61,6 +64,7 @@ public class View extends JFrame {
 		startButton.setVerticalAlignment(SwingConstants.BOTTOM);
 		startButton.setHorizontalAlignment(SwingConstants.LEFT);
 		startButton.setText("start");
+		startButton.setForeground(ftColor);
 		startButton.setEnabled(false);
 		startButton.addActionListener(e -> {
 			startButton.setEnabled(false);
@@ -75,6 +79,7 @@ public class View extends JFrame {
 
 		});
 		time.setFont(new Font("Tahoma", Font.BOLD, 36));
+		time.setForeground(ftColor);
 		GridBagConstraints gbc_time = new GridBagConstraints();
 		gbc_time.gridwidth = 4;
 		gbc_time.gridheight = 3;
@@ -94,6 +99,7 @@ public class View extends JFrame {
 		JButton stopButton = new JButton();
 		stopButton.setVerticalAlignment(SwingConstants.BOTTOM);
 		stopButton.setText("stop");
+		stopButton.setForeground(ftColor);
 		stopButton.setHorizontalAlignment(SwingConstants.RIGHT);
 		stopButton.addActionListener(e -> {
 			clockStop = true;
