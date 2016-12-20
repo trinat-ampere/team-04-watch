@@ -1,7 +1,11 @@
 package app;
 
+import java.awt.Container;
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class GUI {
@@ -28,16 +32,43 @@ public class GUI {
 	 * Create the application.
 	 */
 	public GUI() {
-		initialize();
+		createFrame();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
+
+	
+	
+	//create new clock framed
+	private void createFrame() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//add time thread to the view
+		Time time = new Time();
+		time.start();
+		
+		//init contentPane
+		Container contentPane = frame.getContentPane();
+		
+		//init startButton with actionlistener
+		JButton startButton = new JButton();
+		startButton.addActionListener(e -> {
+			time.start(); 
+		});
+		
+		
+		
+		
+		//init stopButton with actionListener
+		JButton stopButton = new JButton();
+		startButton.addActionListener(e -> {
+			time.yield(); 
+		});
+		
+		
+		
+		
 	}
 
 }
