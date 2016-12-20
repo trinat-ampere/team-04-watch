@@ -22,6 +22,8 @@ import javax.swing.JColorChooser;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+
+
 public class Config_View {
 
 	public JFrame frmTrinatClockConfiguration;
@@ -40,6 +42,8 @@ public class Config_View {
 	private JTextField textField_size;
 	private Color background;
 	private Color text;
+	private JLabel label_Fehler;
+	private Rectangle r;
 
 	/**
 	 * Launch the application.
@@ -139,16 +143,21 @@ public class Config_View {
 		btnSpeichern = new JButton("Speichern");
 		btnSpeichern.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int hoehe = Integer.parseInt(textField_hoehe.getText());
+				
+				
+				int hoehe = NumberUtils.toInt(textField_hoehe.getText(),300);
+						
 				int breite = Integer.parseInt(textField_breite.getText());
 				int x_Cord = Integer.parseInt(textField_x_Cord.getText());
 				int y_Cord = Integer.parseInt(textField_y_Cord.getText());
 				int size = Integer.parseInt(textField_size.getText());
 				Rectangle r = new Rectangle(x_Cord, y_Cord, breite, hoehe); 
+				
+				
 				try {
 					props.storeOptions(r,background,text,size);
 				} catch (Exception e1) {
-					// TODO Auto-generated catch block
+					System.out.println("Fehler");
 					e1.printStackTrace();
 				} 
 				EventQueue.invokeLater(new Runnable() {
@@ -162,10 +171,12 @@ public class Config_View {
 							e.printStackTrace();
 						}
 					}
+					
 				});
-			
+				frmTrinatClockConfiguration.dispose();
 				
 			}
+			
 		});
 		
 		btnTextColor = new JButton("Text Color");
@@ -207,6 +218,13 @@ public class Config_View {
 		gbc_btnBackgroundColor.gridx = 1;
 		gbc_btnBackgroundColor.gridy = 11;
 		frmTrinatClockConfiguration.getContentPane().add(btnBackgroundColor, gbc_btnBackgroundColor);
+		
+		label_Fehler = new JLabel("");
+		GridBagConstraints gbc_label_Fehler = new GridBagConstraints();
+		gbc_label_Fehler.insets = new Insets(0, 0, 5, 0);
+		gbc_label_Fehler.gridx = 2;
+		gbc_label_Fehler.gridy = 11;
+		frmTrinatClockConfiguration.getContentPane().add(label_Fehler, gbc_label_Fehler);
 		GridBagConstraints gbc_btnTextColor = new GridBagConstraints();
 		gbc_btnTextColor.anchor = GridBagConstraints.WEST;
 		gbc_btnTextColor.insets = new Insets(0, 0, 5, 5);
