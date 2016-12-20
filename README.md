@@ -97,8 +97,12 @@ Nachfolgend ein Bild der 1. Ausbaustufe
 ##### UML - Klassendiagramm
 
 ![webapps](Bilder/Ausbaustufe1_Klassendiagramm.PNG)
-	
 
+##### Junit - Test
+
+![webapps](Bilder/Ausbaustufe1_Junit-Test.PNG)
+	
+In der Ausbaustufe 1 haben wir unser Testing so aufgebaut, dass das speichern und abrufen dieser Daten getestet wird.
 
 
 >>>>>>> branch 'master' of https://github.com/trinat-ampere/team-04-watch.git
