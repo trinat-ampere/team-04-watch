@@ -112,12 +112,12 @@ Mit dem Start und Stop Button koennen Sie die Uhr anhalten (Stop) und mit aktuel
 
 
 * Als Computer Anwender moechte ich die Zeit sehen, um zu wissen wie 	spaet es ist.
-* Als Uhren Benutzer moechte ich die Uhr anhlaten, um mir einen 		bestimmten Zeitpunkt einzupraegen
+* Als Uhren Benutzer moechte ich die Uhr anhalten, um mir einen 		bestimmten Zeitpunkt einzupraegen
 * Als Uhren Anwender moechte ich die Uhr starten, damit mir sofort 		die aktuelle Zeit angezeigt wird.
 * Als Kunstliebhaber moechte ich die Zeit als Digitaluhr ablesen koennen, damit ich eine andere Darstellungsform machen kann
 * Als Designer moechte ich die Hintergrundfarbe und die Schriftfarbe veraendern koennen.
 * Als Computer Anwender moechte ich die aktuelle Konfiguration speichern, damit die Anwendunf beim naechsten Start im gleichen Zustand ist.
-* Als Uhrenkenne moechte ich mehrere Uhren auf dem Bildschirm haben, damit ich verschiedene Konfigurationen gleichzeitig geoeffnet haben kann
+* Als Uhrenkenner moechte ich mehrere Uhren auf dem Bildschirm haben, damit ich verschiedene Konfigurationen gleichzeitig geoeffnet haben kann
 * Als Weltenbummler moechte ich verschiedene Uhren mit verschiednenen Zeitzone sehen, damit ich verschiedene Zeitzonen im Blick habe.
 * Als Designer moechte ich zwischen der Digtalen und der Analogen Uhrenanziege wechseln koennen, damit ich die Oberflaeche personalisieren kann.
 
@@ -139,6 +139,8 @@ Nachfolgend ein Bild der 1. Ausbaustufe
 
 ![webapps](Bilder/Ausbaustufe1_UHR.PNG)
 
+
+
 ##### UML - Klassendiagramm
 
 ![webapps](Bilder/Ausbaustufe1_Klassendiagramm.PNG)
@@ -148,6 +150,17 @@ Nachfolgend ein Bild der 1. Ausbaustufe
 ![webapps](Bilder/Ausbaustufe1_Junit-Test.PNG)
 	
 In der Ausbaustufe 1 haben wir unser Testing so aufgebaut, dass das speichern und abrufen dieser Daten getestet wird.
+
+## Dokumentation Sprint Ausbaustufe 2
+##### User Story Sprint backlog
+1. Als Designer moechte ich die Hintergrundfarbe und die Schriftfarbe veraendern koennen.
+	* Akzeptanzkriterium: Hintergrund-, Schriftfarbe und Schriftgroesse koennen in einem beim Start erscheinenden Dialogfeld konfigueriert werden.
+	* Aufwandschaetzung: 5 Storypoints  
+2. Als Computer Anwender moechte ich die aktuelle Konfiguration speichern, damit die Anwendunf beim naechsten Start im gleichen Zustand ist.
+	* Akzeptanzkriterium: Die Uhrenkonfiguration bleibt erhalten und beim Neustart oeffnet sich die Uhr mit der vorhergehenden Koniguration.
+	* Aufwandschaetzung: 2 Storypoint  
+
+Nachfolgend ein Bild der 1. Ausbaustufe
 
 
 >>>>>>> branch 'master' of https://github.com/trinat-ampere/team-04-watch.git
