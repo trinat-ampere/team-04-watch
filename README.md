@@ -166,5 +166,7 @@ Nachfolgend ein Bild der 2. Ausbaustufe
 
 ![webapps](Bilder/Ausbaustufe2_Pom.PNG)
 
+## Dokumentation Sprint Ausbaustufe 3
+Die Ausbastufe 3 ist in Arbeit und wird mit dem nächsten Sprint fertiggestellt.
 
 >>>>>>> branch 'master' of https://github.com/trinat-ampere/team-04-watch.git
