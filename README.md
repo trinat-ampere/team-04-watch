@@ -152,10 +152,10 @@ In der Ausbaustufe 1 haben wir unser Testing so aufgebaut, dass das speichern un
 ## Dokumentation Sprint Ausbaustufe 2
 ##### User Story Sprint backlog
 1. Als Designer moechte ich die Hintergrundfarbe und die Schriftfarbe veraendern koennen.  
-	* Akzeptanzkriterium: Beim ausführen des Programms öffnet sich ein Konfigurator mit dem ich die Hintergrund- und Schriftarbe einstellen kann.  
+	* Akzeptanzkriterium: Beim ausfuehren des Programms oeffnet sich ein Konfigurator mit dem ich die Hintergrund- und Schriftarbe einstellen kann.  
 	* Aufwandschaetzung: 5 Storypoints  
 2.  Als Computer Anwender moechte ich die aktuelle Konfiguration speichern, damit die Anwendung beim naechsten Start im gleichen Zustand ist.  
-	* Akzeptanzkriterium: Es ist möglich die Konfigurationen der Uhr zu speichern und diese bei einer nächsten Nutzung wieder aufrufen zu können.  
+	* Akzeptanzkriterium: Es ist moeglich die Konfigurationen der Uhr zu speichern und diese bei einer naechsten Nutzung wieder aufrufen zu koennen.  
 	* Aufwandschaetzung: 2 Storypoint  
 	
 	
@@ -167,6 +167,6 @@ Nachfolgend ein Bild der 2. Ausbaustufe
 ![webapps](Bilder/Ausbaustufe2_Pom.PNG)
 
 ## Dokumentation Sprint Ausbaustufe 3
-Die Ausbastufe 3 ist in Arbeit und wird mit dem nächsten Sprint fertiggestellt.
+Die Ausbastufe 3 ist in Arbeit und wird mit dem naechsten Sprint fertiggestellt.
 
 >>>>>>> branch 'master' of https://github.com/trinat-ampere/team-04-watch.git
